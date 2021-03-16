@@ -1,6 +1,7 @@
 {
   "name": "cms-strapi",
   "version": "1.0.0",
+  "license": "",
   "scripts": {
     "dev": "next",
     "develop": "next",
@@ -28,9 +29,6 @@
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
-    "postcss-preset-env": "^6.7.0",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-react": "^7.12.10",
-    "@prisma/cli": "^2.13.1"
+    "postcss-preset-env": "^6.7.0"
   }
 }
