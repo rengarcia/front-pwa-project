@@ -33,7 +33,6 @@ const LeadForm = ({ data }) => {
             } catch (err) {
               setErrors({ api: err.message });
             }
-
             setLoading(false);
             setSubmitting(false);
           }}
