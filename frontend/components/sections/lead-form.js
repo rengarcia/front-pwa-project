@@ -16,17 +16,17 @@ const LeadForm = ({ data }) => {
       <h1 className="text-3xl mb-10 font-bold">{data.title}</h1>
       <div className="flex flex-col items-center">
         <Formik
-          initialValues={{ email: "" }}
+          initialValues={{ email: "", name: "" }}
           validationSchema={LeadSchema}
           onSubmit={async (values, { setSubmitting, setErrors }) => {
             setLoading(true);
-
             try {
               setErrors({ api: null });
               await fetchAPI("/lead-form-submissions", {
                 method: "POST",
                 body: JSON.stringify({
                   email: values.email,
+                  name: values.name,
                   location: data.location,
                 }),
               });
