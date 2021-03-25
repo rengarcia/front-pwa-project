@@ -1,7 +1,7 @@
 export function getStrapiURL(path) {
   return `${
     process.env.NEXT_PUBLIC_STRAPI_API_URL ||
-    "https://back-pwa-med.herokuapp.com"
+    "https://back-pwa-med-fl63j.ondigitalocean.app"
   }${path}`;
 }
 
